@@ -16,11 +16,13 @@
           <br />
           <input type="number" value="0" id="cel" class="input" />
         </div>
-        <div class="input-div">
-          <label>Fahrenheit</label>
-          <br />
-          <input type="number" value="32" id="fah" class="input" />
-        </div>
+        <hr color="white" />
+          <div class="input-div">
+            <label>Fahrenheit</label>
+            <br />
+            <input type="number" value="32" id="fah" class="input" />
+          </div>
+        <hr color="white" />
         <div class="input-div">
           <label>Kelvin</label>
           <br />
@@ -37,10 +39,10 @@
           let f = (c * 9) / 5 + 32;
           let k = parseInt(c) + 273.15;
           if (!Number.isInteger(f)) {
-            f = f.toFixed(4);
+            f = f.toFixed(2);
           }
           if (!Number.isInteger(k)) {
-            k = k.toFixed(4);
+            k = k.toFixed(2);
           }
           fah.value = f;
           kel.value = k;
@@ -51,10 +53,10 @@
           let c = ((f - 32) * 5) / 9;
           let k = ((f - 32) * 5) / 9 + 273.15;
           if (!Number.isInteger(c)) {
-            c = c.toFixed(4);
+            c = c.toFixed(2);
           }
           if (!Number.isInteger(k)) {
-            k = k.toFixed(4);
+            k = k.toFixed(2);
           }
           cel.value = c;
           kel.value = k;
@@ -65,10 +67,10 @@
           let c = k - 273.15;
           let f = ((k - 273.15) * 9) / 5 + 32;
           if (!Number.isInteger(c)) {
-            c = c.toFixed(4);
+            c = c.toFixed(2);
           }
           if (!Number.isInteger(f)) {
-            f = f.toFixed(4);
+            f = f.toFixed(2);
           }
           cel.value = c;
           fah.value = f;
