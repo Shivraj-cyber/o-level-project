@@ -5,7 +5,7 @@ h1 {
 
 #container {
   text-align: center;
-  background-color: lightgoldenrodyellow;
+  background-color: orange;
   margin-top: 50px;
 }
 
@@ -27,6 +27,6 @@ label {
 
 .footer {
   color: white;
-  background-color:black;
+  background-color:grey;
   text-align: center;
 }
